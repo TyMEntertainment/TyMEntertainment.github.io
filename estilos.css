@@ -1,0 +1,155 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+}
+
+/******MENU******/
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background: rgb(46, 46, 46);
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+}
+
+.header-content{
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
+    color: white;
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.botones{
+    height: 60px;
+    margin-left: 170px;
+}
+
+.botones ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+}
+
+.botones ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.botones ul li:hover {
+    margin: 0px 27px;
+    transition: 650ms;
+    background: rgb(99, 99, 99);
+}
+
+.botones ul li a {
+    font-size: 25px;
+    font-family: 'Gemunu Libre', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.botones ul li a:hover {
+    text-shadow: 3px 5px 10px black;
+    transition: 500ms;
+    font-size: 30px;
+}
+
+.boton-especial {
+    height: 60px;
+}
+
+.boton-especial ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+}
+
+.boton-especial ul li {
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-especial ul li a {
+    background: #ffffff;
+    border-radius: 10%;
+    font-size: 20px;
+    font-family: sans-serif;
+    
+}
+
+.selected:before {
+    content: '';
+    width: 100%;
+    height: 6px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+}
+
+#icon-menu {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 6px;
+    padding: 6px;
+    font-size: 20px;
+    background: rgb(99, 99, 99);
+    border-radius: 100%;
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#icon-menu:hover {
+    background: rgb(99, 99, 99);
+}
+
+/******PORTADA******/
+
+.cantantes {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+}
+
+/******RESPONSIVE******/
+
