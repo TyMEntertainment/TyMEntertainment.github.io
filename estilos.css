@@ -153,3 +153,43 @@ header{
 
 /******RESPONSIVE******/
 
+@media screen and (max-width: 1100px) {
+
+    .header-content{
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+
+    .botones {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 904px) {
+    
+    .botones, .boton-especial {
+        display: none;
+    }
+
+    #icon-menu {
+        display: flex;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    #icon-menu {
+        width: 40px;
+        height: 40px;
+        top: 10px;
+    }
+}
