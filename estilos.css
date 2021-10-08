@@ -19,7 +19,7 @@ header{
     height: 60px;
     background: rgb(46, 46, 46);
     box-shadow: 0 4px 25px -22px black;
-    z-index: 2;
+    z-index: 4;
 }
 
 .header-content{
@@ -59,6 +59,7 @@ header{
 }
 
 .botones ul li{
+    margin-right: 200px;
     height: 100%;
     margin: 0px 20px;
     display: flex;
@@ -83,32 +84,6 @@ header{
     text-shadow: 3px 5px 10px black;
     transition: 500ms;
     font-size: 30px;
-}
-
-.boton-especial {
-    height: 60px;
-}
-
-.boton-especial ul {
-    list-style: none;
-    height: 100%;
-    display: flex;
-}
-
-.boton-especial ul li {
-    height: 100%;
-    margin: 0px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.boton-especial ul li a {
-    background: #ffffff;
-    border-radius: 10%;
-    font-size: 20px;
-    font-family: sans-serif;
-    
 }
 
 .selected:before {
@@ -143,6 +118,20 @@ header{
     background: rgb(99, 99, 99);
 }
 
+.botones ul li a i {
+    display: none;
+}
+
+.fondo {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 60px;
+    background: rgba(0, 0, 0, 0.308);
+    z-index: 2;
+}
+
 /******PORTADA******/
 
 .cantantes {
@@ -166,10 +155,6 @@ header{
 }
 
 @media screen and (max-width: 904px) {
-    
-    .botones, .boton-especial {
-        display: none;
-    }
 
     #icon-menu {
         display: flex;
@@ -182,6 +167,60 @@ header{
 
     .logo img {
         width: 30px;
+    }
+
+    .botones {
+        transition: all 300ms;
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        top: 60px;
+        left: 0%;
+        background: rgb(46, 46, 46);
+        overflow: hidden;
+        box-shadow: 10px 0 20px -25px black;
+        z-index: 3;
+    }
+
+    .botones ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .botones ul li {
+        max-width: 300px;
+        margin: 0px 0px;
+        height: 50px;
+        justify-content: flex-start;
+        transition: all 300ms;
+    }
+
+    .botones ul li:hover {
+        background: rgb(46, 46, 46);
+        margin: 0px 0px;
+    }
+
+    .botones ul li a {
+        color: #fff;
+        margin-left: 20px;
+    }
+
+    .botones ul li a:hover {
+        font-size: 25px;
+        text-shadow: none;
+    }
+
+    .botones ul li a i {
+        width: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    .selected:before {
+        width: 6px;
+        height: 100%;
+        background: #fff;
     }
 }
 
