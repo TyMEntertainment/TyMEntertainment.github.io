@@ -136,10 +136,49 @@ header{
 
 /******PORTADA******/
 
-.cantantes {
+.contenido-de-portada {
+    margin: auto;
+    max-width: 100%;
+    height: 700px;
+    position: relative;
+    top: 60px;
+    background-image: url(IMG/img-cantantes.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenido-de-portada:before {
+    content: '';
     width: 100%;
-    margin-top: 60px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.portada .texto {
+    max-width: 80%;
+    height: 500px;
+    margin: auto;
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+.portada .texto h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.portada .texto p {
+    font-size: 20px;
 }
 
 /******RESPONSIVE******/
